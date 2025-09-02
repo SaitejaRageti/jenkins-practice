@@ -27,7 +27,7 @@ pipeline {
                         sleep 10
                         env
                         echo "I am learning ${Course}. Wish me best"
-                        echo "Hello ${params.person}"
+                        echo "Hello ${params.PERSON}"
                     """
                 }
                
