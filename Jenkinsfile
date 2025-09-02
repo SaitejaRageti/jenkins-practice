@@ -26,7 +26,7 @@ pipeline {
                         echo 'Hello Build'
                         sleep 10
                         env
-                        echo "I am learning ${Course}. Wish me best"
+                        echo "I am learning ${Course}. Wish me  best"
                         echo "Hello ${params.PERSON}"
                     """
                 }
@@ -52,7 +52,7 @@ pipeline {
             steps {
                 
                 script {
-                    
+
                     echo "Hello, ${PERSON}, nice to meet you."
                     echo 'Deploying....'
                 }
