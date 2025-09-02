@@ -2,7 +2,7 @@ pipeline {
     agent { label 'AGENT-1' }
 
     environment {
-        person = "saiteja"
+       Course = "Devops with Jenkins"
     }
 
     stages {
@@ -13,7 +13,7 @@ pipeline {
                     sh """
                         echo "Hello Build"
                         sleep 10
-                        echo " Hi ${person}"
+                        env
                     """
                 }
                
