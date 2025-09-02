@@ -3,7 +3,6 @@ pipeline {
 
     environment {
        Course = "Devops with Jenkins"
-       PERSON = "ANU"
     }
     options {
         disableConcurrentBuilds()
@@ -28,7 +27,7 @@ pipeline {
                         sleep 10
                         env
                         echo "I am learning ${Course}. Wish me best"
-                        echo "${params.person}"
+                        echo "Hello ${params.person}"
                     """
                 }
                
